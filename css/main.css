@@ -10,14 +10,23 @@
   height: 100vh;
 }
 
-.bg-img{
+.bg-img, .img-cat{
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.img-cat{
+  width: 900px;
+  height: 300px;
 }
 
 @media (max-width: 464px){
   .bg-img{
     background-image: url("../assets/img/dawn.png");
+  }
+
+  .img-cat{
+    background-image: url("../assets/img/kitten-small.png");
   }
 }
 
@@ -25,10 +34,17 @@
   .bg-img{
     background-image: url("../assets/img/maxresdefault.jpg");
   }
+  .img-cat{
+    background-image: url("../assets/img/kitten-large.png");
+  }
 }
 
 @media (min-width: 650px){
   .bg-img{
     background-image: url("../assets/img/landscape.jpg");
+  }
+
+  .img-cat{
+    background-image: url("../assets/img/kitten-medium.png");
   }
 }
