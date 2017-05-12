@@ -6,7 +6,6 @@
 .container{
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   height: 100vh;
 }
 
@@ -16,13 +15,15 @@
 }
 
 .img-cat{
-  width: 900px;
-  height: 300px;
+  display: flex;
+  width: 400px;
+  height: auto;
+  background-size: 100% auto;
 }
 
 @media (max-width: 464px){
   .bg-img{
-    background-image: url("../assets/img/dawn.png");
+    background-image: url("../assets/img/maxresdefault.jpg");
   }
 
   .img-cat{
@@ -32,10 +33,13 @@
 
 @media (min-width: 465px){
   .bg-img{
-    background-image: url("../assets/img/maxresdefault.jpg");
+    background-image: url("../assets/img/dawn.png");
   }
+
   .img-cat{
     background-image: url("../assets/img/kitten-large.png");
+    width: 700px;
+    height: 300px;
   }
 }
 
