@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+.bg-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 464px){
+  .bg-img{
+    background-image: url("../assets/img/dawn.png");
+  }
+}
+
+@media (min-width: 465px){
+  .bg-img{
+    background-image: url("../assets/img/maxresdefault.jpg");
+  }
+}
+
+@media (min-width: 650px){
+  .bg-img{
+    background-image: url("../assets/img/landscape.jpg");
+  }
+}
