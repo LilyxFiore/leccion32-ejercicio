@@ -1,1 +1,2 @@
-# leccion32-ejercicio
+# LECCIÓN 32 - ENFOQUE DE DISEÑO II
+## EJERCICIO KITTEN
