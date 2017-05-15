@@ -9,7 +9,11 @@
 </head>
 <body>
   <div class="container bg-img">
-    <div class="img-cat"></div>
+    <picture>
+      <source media="(min-width: 650px)" srcset="assets/img/kitten-medium.png">
+      <source media="(min-width: 465px)" srcset="assets/img/kitten-large.png">
+      <img src="assets/img/kitten-small.png" alt="">
+    </picture>
   </div>
 </body>
 </html>
