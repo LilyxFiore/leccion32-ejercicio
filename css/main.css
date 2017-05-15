@@ -5,50 +5,52 @@
 
 .container{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: auto;
   height: 100vh;
 }
 
-.bg-img, .img-cat{
+.bg-img{
+  background-image: url("../assets/img/landscape.jpg");
+  background-size: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .img-cat{
-  display: flex;
-  width: 400px;
-  height: auto;
+  background-image: url("../assets/img/kitten-medium.png");
   background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 40%;
+  height: 100%;
 }
 
-@media (max-width: 464px){
-  .bg-img{
-    background-image: url("../assets/img/maxresdefault.jpg");
-  }
-
-  .img-cat{
-    background-image: url("../assets/img/kitten-small.png");
-  }
-}
-
-@media (min-width: 465px){
+@media (max-width: 650px){
   .bg-img{
     background-image: url("../assets/img/dawn.png");
+    background-size: auto 100vh;
   }
 
   .img-cat{
     background-image: url("../assets/img/kitten-large.png");
-    width: 700px;
-    height: 300px;
+    background-size: 100% auto;
+    width: 100%;
   }
 }
 
-@media (min-width: 650px){
+@media (max-width: 465px){
   .bg-img{
-    background-image: url("../assets/img/landscape.jpg");
+    background-image: url("../assets/img/maxresdefault.jpg");
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
   }
 
   .img-cat{
-    background-image: url("../assets/img/kitten-medium.png");
+    background-image: url("../assets/img/kitten-small.png");
+    background-size: 100% auto;
+    width: 90%;
   }
 }
